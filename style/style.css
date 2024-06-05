@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    font-size: 15px;
+}
+
+.conteneur {
+    display: flex;
+    max-width: 800px;
+}
+
+.sedans {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(31, 77%, 52%);
+    padding: 20px;
+    border-radius: 5% 0% 0% 5%;
+}
+
+img {
+    width: 100px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-left: 10px;
+    margin-bottom: 50px;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sedans button {
+    border: solid 1px hsl(0, 0%, 95%);
+    color:  hsl(31, 77%, 52%);
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.suvs {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(184, 100%, 22%);
+    padding: 20px;
+}
+
+.suvs button {
+    border: solid 1px hsl(0, 0%, 95%);
+    color:  hsl(184, 100%, 22%);
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.luxury {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(179, 100%, 13%);
+    padding: 20px;
+    border-radius: 0% 5% 5% 0%;
+}
+
+.luxury button {
+    border: solid 1px hsl(0, 0%, 95%);
+    color:  hsl(179, 100%, 13%);
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 375px){
+    body {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .conteneur {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .conteneur section {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .conteneur h1 {
+        font-size: 24px;
+    }
+
+    .conteneur p {
+        margin-bottom: 20px;
+    }
+
+    .conteneur button {
+        width: 80px;
+        height: 25px;
+        font-size: 10px;
+    }
+
+    .sedans {
+        border-radius: 5% 5% 0% 0%;
+    }
+
+    .luxury {
+        border-radius: 0% 0% 5% 5%;
+    }
+}
